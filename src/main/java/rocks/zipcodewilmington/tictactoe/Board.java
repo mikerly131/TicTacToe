@@ -6,6 +6,7 @@ package rocks.zipcodewilmington.tictactoe;
 public class Board {
 
     private char r1c1, r1c2, r1c3, r2c1, r2c2, r2c3, r3c1, r3c2, r3c3;
+    private String row1 = "";
     private String winner;
     private Boolean favorOfX, favorOfY, tied;
 
@@ -22,14 +23,13 @@ public class Board {
         this.r3c2 = matrix[2][1];
         this.r3c3 = matrix[2][2];
 
-
     }
 
     public Boolean isInFavorOfX() {
 
         Boolean xWinner = false;
 
-        /* Extract some methods when I get some time
+        /* Extract some methods when I get some time,  haven't had time
          for now, just getting in something that I can reason out
          Getting the character at each location on the board
          Checking if the rows, then columns, then diagnols all have X or O
